@@ -1,65 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplo de drag & drop</title>
-</head>
-<body>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
     <header class="encabezado">
-        <h1 class="encabezado-titulo">Test de informática</h1>
-        <h2 class="encabezado-subtitulo">Mueve cada imagen a caja
-            correspondiente
-        </h2>
+      <h1 class="encabezado-titulo">Test de informática</h1>
+      <h2 class="encabezado-subtitulo">
+        Mueve cada imagen a caja correspondiente
+      </h2>
     </header>
     <main class="contenedor">
-            <div class="contenedor-imagen">
-                <img src="images/i1.png" alt="" class="icono">
+      <div class="disponibles">
+        <div class="contenedor-icono">
+          <img src="images/i1.png" alt="" class="icono" />
         </div>
-            <div class="contenedor-imagen">
-                <img src="images/i2.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i3.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i4.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i5.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i6.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i7.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i8.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i9.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i10.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i11.png" alt="" class="icono">
-            </div>
-            <div class="contenedor-imagen">
-                <img src="images/i12.png" alt="" class="icono">
-            </div>
+        <div class="contenedor-icono">
+          <img src="images/i2.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i3.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i4.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i5.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i6.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i7.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i8.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i9.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i10.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i11.png" alt="" class="icono" />
+        </div>
+        <div class="contenedor-icono">
+          <img src="images/i12.png" alt="" class="icono" />
+        </div>
+      </div>
+      <div class="contenedor-es">
         <div class="entrada">
             <h3>Dispositivos de entrada</h3>
         </div>
         <div class="salida">
             <h3>Dispositivos de salida</h3>
         </div>
-        <footer class="pie">
-            <!-- max="12" ya que hay 12 imágenes -->
-            <progress class="progreso" id="progreso" min="1" max="12" value="0"></progress>
-            <p class="aciertos"><span id="aciertos">0</span></p>
-        </footer>
+      </div>
+      <footer class="pie">
+        <!-- max="12" ya que hay 12 imágenes -->
+        <progress
+          class="progreso"
+          id="progreso"
+          min="1"
+          max="12"
+          value="0"
+        ></progress>
+        <p class="aciertos">Aciertos: <span id="aciertos">0</span></p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
