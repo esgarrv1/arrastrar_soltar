@@ -82,8 +82,16 @@ body {
     padding: 1rem;
     display: flex;
     justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
     gap: 20px;
     min-height: 200px;
+}
+.es-titulo {
+    /* En flex no tiene por qué hacerle caso a width, pero
+    siempre a min-width y max-width */
+    min-width: 100%;
+    text-align: center;
 }
 .progreso {
     width: 100%;
