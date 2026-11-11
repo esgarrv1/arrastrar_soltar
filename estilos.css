@@ -1,4 +1,4 @@
-*, *::before, *::after {
+*:not(dialog), *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,6 +69,8 @@ body {
     }
 }
 .icono {
+    /* Para evitar que se seleccione el icono para copiarlo */
+    user-select: none;
     width: 70px;
     height: 70px;
 }
@@ -125,6 +127,36 @@ progress::-webkit-progress-value {
 
 .icono-fallado {
     animation: animacion-fallo .2s;
+}
+
+.tiempo {
+    font-size: 2rem;
+    text-align: center;
+}
+.resultado {
+    padding: 2rem;
+    min-width: 400px;
+    border-radius: 10px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-primario);
+}
+/* Lo hemos creado ya que si ponemos flex al dialog, dejará
+de tener display: none y se mostrará desde el principio */
+.resultado-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.resultado-cerrar {
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-secundario);
+    padding: .6rem 2rem;
+    outline: none;
+    &:hover {
+        background-color: hsl(from var(--color-secundario) h s 45%);
+    }
 }
 
 @keyframes animacion-acierto {
